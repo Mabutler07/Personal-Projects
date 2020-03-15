@@ -1,0 +1,158 @@
+package com.company.code;
+
+import java.util.Scanner;
+
+public class Main {
+    /*
+    Goal Is To Create A Program That Will Guess The Number The User Enters
+     */
+    public static void main(String[] args) {
+        boolean loop = true;
+
+        Scanner scan = new Scanner(System.in);
+
+        String programName = "Xunil";
+        int userGuess;
+        int xunilGuess;
+        String name;
+        int score;
+
+
+        System.out.println("WELCOME TO THE RANDOM NUMBER GUESS GAME..ABOB!");
+        System.out.println("THE MAGICAL PROGRAM " + programName.toUpperCase() + " Will Find IT");
+        System.out.println("");
+
+        System.out.println("Please Enter Your Name To Begin The Program");
+        name = scan.next();
+        System.out.println("FANTASTIC, GREAT MEETING YOU " + name.toUpperCase());
+        do {
+            System.out.println("Please Enter A Number Between 1 - 10");
+            System.out.print("Enter Your Number Now Please: ");
+            userGuess = scan.nextInt();
+            System.out.println("");
+            System.out.println(programName + " THE GREAT Will Now Magically Guess Your Number");
+
+            //Math.random
+            xunilGuess = (int) (11 * Math.random());
+            xunilGuess = xunilGuess + 1;
+            if (userGuess == xunilGuess) {
+                System.out.println("HA-HA I GOT IT !! ");
+
+            } else if (xunilGuess > userGuess) {
+                System.out.println(programName + " guessed: " + xunilGuess);
+                System.out.println(name + " Guessed " + userGuess);
+
+
+            } else if (xunilGuess < userGuess) {
+                System.out.println(programName + " guessed: " + xunilGuess);
+                System.out.println(name + " Guessed " + userGuess);
+
+            }
+            System.out.println("DO YOU WANT TO PLAY AGAIN ?? ");
+            System.out.println("Enter Yes or No");
+
+            String answer = scan.next();
+            switch (answer) {
+                case "Yes":
+                    loop = true;
+                    System.out.println("Ah - Ha, Another Chance For Victory I see");
+                    break;
+                case "yes":
+                    loop = true;
+                    System.out.println("Ah - Ha, Another Chance For Victory I see");
+                    break;
+                case "No":
+                    loop = false;
+                    System.out.println("Thanks For Playing, I Hope We Play Again Someday");
+                    break;
+                case "no":
+                    loop = false;
+                    System.out.println("Thanks For Playing, I Hope We Play Again Someday");
+                    break;
+                default:
+                    System.out.println("Sorry That Was An Invalid Answer, Goodbye ");
+                    break;
+
+            }
+        } while (loop != false);
+    }
+}
+package com.company.code;
+
+import java.util.Scanner;
+
+public class Main {
+    /*
+    Goal Is To Create A Program That Will Guess The Number The User Enters
+     */
+    public static void main(String[] args) {
+        boolean loop = true;
+
+        Scanner scan = new Scanner(System.in);
+
+        String programName = "Xunil";
+        int userGuess;
+        int xunilGuess;
+        String name;
+        int score;
+
+
+        System.out.println("WELCOME TO THE RANDOM NUMBER GUESS GAME..ABOB!");
+        System.out.println("THE MAGICAL PROGRAM " + programName.toUpperCase() + " Will Find IT");
+        System.out.println("");
+
+        System.out.println("Please Enter Your Name To Begin The Program");
+        name = scan.next();
+        System.out.println("FANTASTIC, GREAT MEETING YOU " + name.toUpperCase());
+        do {
+            System.out.println("Please Enter A Number Between 1 - 10");
+            System.out.print("Enter Your Number Now Please: ");
+            userGuess = scan.nextInt();
+            System.out.println("");
+            System.out.println(programName + " THE GREAT Will Now Magically Guess Your Number");
+
+            //Math.random
+            xunilGuess = (int) (11 * Math.random());
+            xunilGuess = xunilGuess + 1;
+            if (userGuess == xunilGuess) {
+                System.out.println("HA-HA I GOT IT !! ");
+
+            } else if (xunilGuess > userGuess) {
+                System.out.println(programName + " guessed: " + xunilGuess);
+                System.out.println(name + " Guessed " + userGuess);
+
+
+            } else if (xunilGuess < userGuess) {
+                System.out.println(programName + " guessed: " + xunilGuess);
+                System.out.println(name + " Guessed " + userGuess);
+
+            }
+            System.out.println("DO YOU WANT TO PLAY AGAIN ?? ");
+            System.out.println("Enter Yes or No");
+
+            String answer = scan.next();
+            switch (answer) {
+                case "Yes":
+                    loop = true;
+                    System.out.println("Ah - Ha, Another Chance For Victory I see");
+                    break;
+                case "yes":
+                    loop = true;
+                    System.out.println("Ah - Ha, Another Chance For Victory I see");
+                    break;
+                case "No":
+                    loop = false;
+                    System.out.println("Thanks For Playing, I Hope We Play Again Someday");
+                    break;
+                case "no":
+                    loop = false;
+                    System.out.println("Thanks For Playing, I Hope We Play Again Someday");
+                    break;
+                default:
+                    System.out.println("Sorry That Was An Invalid Answer, Goodbye ");
+                    break;
+
+            }
+        } while (loop != false);
+    }
+}
